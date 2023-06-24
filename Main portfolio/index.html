@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4935892612.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#hedaer">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Engineer</p>
+                <h1>Hi, I'm <span>Ayush</span> Singh From India.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/cover.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am CSE student, who loves building websites. Currently I am working on perfecting my backend skills and learning cloud computing.I've been fortunate enough to get exposed to multiple technologies and have worked on them.My major arena of working is html, css, javascript, ML, python and reactjs.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Cloud Computing</span><br>AWS Cloud Platform</li>
+                            <li><span>Front End Web Development</span><br>CSS , HTML and Javascript </li>
+                            <li><span>Coding</span><br>Python,C</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1-28 Feb 2022</span><br>Twowaits Technologies Pvt. Ltd</li>
+                            <!-- <li><span>2020</span><br>brahma shkati public school</li>
+                            <li><span>2018</span><br>silver line prestige school</li> -->
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>ABES Engineering College</li>
+                            <li><span>2020</span><br>Brahma Shakti Public School</li>
+                            <li><span>2018</span><br>Silver Line Prestige School</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Loves creating front end sites using HTML, CSS, Javascript and ReactJs.</p>
+                    <a href="images/webdevelopment.pdf">Learn more</a>
+                </div>
+                <div>
+                    <!-- <i class="fa-sharp fa-regular fa-cloud-arrow-up"></i> -->
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <h2>Cloud Computing</h2>
+                    <p>Working on AWS platform to know more about it.</p>
+                    <a href="images/cloud.pdf">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Competetive Programming</h2>
+                    <p>Having great time on coding platforms in order to have some coding thing too.</p>
+                    <a href="images/Coursera VRJX8JGWAUWS.pdf">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/imgp.png" alt="">
+                    <div class="layer">
+                        <h3>Pawhomes Template</h3>
+                        <p>Front End site that helps to provide shelterto the dogs by relocating them allover
+                            India.</p>
+                        <a href="https://pawhomes.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/imgh.png" alt="">
+                    <div class="layer">
+                        <h3>Hate Speech Detection Model</h3>
+                        <p>Model which identifies and detects hateful and offensive
+                            speech being poured on the internet.</p>
+                        <a href="https://github.com/ayush20222/Hate_Speech_Detection.git"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/imgn.png" alt="">
+                    <div class="layer">
+                        <h3>NewsSense</h3>
+                        <p>NewsSense,a revolutionary personalized news recommendation system designed to transform the way you consume news.</p>
+                        <a href="https://github.com/ayush20222/NewsSense.git"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/ayush20222" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> ayushsingh20022@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 9315769655</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://github.com/ayush20222"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ayush-singh-9a636b221/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text"  name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit </button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©2023 Portfolio Ayush All rights reserved.</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks= document.getElementsByClassName('tab-links');
+        var tabcontents= document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks ){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents ){
+                tabcontent.classList.remove('active-tab');
+            }
+
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxUOkbXpkGYnNlnq-kPVsBoSmcBAyx9ceOcOrr89x2r6PL4dia06Gw75QD4joi5SZZ5CA/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML='Message Sent Successfully'
+            setTimeout(function(){
+                msg.innerHTML=''
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
